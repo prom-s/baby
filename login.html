@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/my.css"/>
+		<link rel="stylesheet" type="text/css" href="css/login.css"/>
+	
+		<!--<script src="js/Js.js" type="text/javascript" charset="utf-8"></script>-->
+	    <script src="js/jquery-1.11.3.js" type="text/javascript" charset="utf-8"></script>
+	    <script src="js/demo.js" type="text/javascript" charset="utf-8"></script>
+	    <script src="js/login.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+
+	
+	
+	<body>
+		<header id="head">
+
+			<div id="headBox">
+				<div id="Boxrt" class="rt">
+					<ul>
+						<li>欢迎来到母婴之家！</li>
+						<li><a class="red" href="login.html">[登录]</a> <a  class="red" href="register.html">[免费注册]</a></li><s></s>
+						<li id="dingdan" class="list"><a href="myorder.html">我的订单<b></b></a>
+							<div id="dd">
+								<ul>
+									<li><a href="javascript:void(0);">我的家</a></li>
+									<li><a href="javascript:void(0);">我的提问</a></li>
+									<li><a href="javascript:void(0);">我的评论</a></li>
+									<li><a href="javascript:void(0);">我的收藏</a></li>
+									<li><a href="javascript:void(0);">我的幸运星</a></li>
+								</ul>
+							</div>
+						</li><s></s>
+						<li id="fw" class="list"><a href="javascript:void(0);">客户服务<b></b></a>
+							<div id="fuwu">
+								<ul>
+									<li><a href="javascript:void(0);">在线服务</a></li>
+									<li><a href="javascript:void(0);">帮助中心</a></li>
+								</ul>
+							</div>
+						</li><s></s>
+						<li><a href="javascript:void(0);">商务合作</a></li><s></s>
+						<li><a href="javascript:void(0);">分类导航</a></li>
+					</ul>
+				</div>
+				<div id="Boxlf" class="lf">
+					<ul>
+						<li style="border-left:1px solid #ccc;border-top:1px solid #ccc;background: #fff;"><a class="red" href="javascript:void(0);">母婴之家</a></li>
+						<li><a href="javascript:void(0);">母婴海淘</a></li>
+						<li class="sjb"><a href="javascript:void(0);"><b></b>手机版</a>
+							<div id="sj">					
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</header>
+		
+		
+		<div id="main">	
+			<img src="img/myzj.png"/>
+		</div>
+		
+		<div id="main_mid_1">
+			<ul id="zcdl">
+				<li class="zc_1"><a href="register.html"><p></p>注册</a></li>
+				<li class="dl_1"><a href="login.html"><p></p>登录</a></li>
+			</ul>
+			<div id="dl_main">
+				<div id="ewm">
+					<div class="erweima" title="下载页面">
+						<img src="img/erweima.jpg"/>
+					</div>	
+					
+				</div>
+				 <ul id="dl_main_right">
+				 	 <form action="register.html" method="get" onsubmit="return dl()">
+				 	 	<li class="mar">
+				 	 		<label >用户名：</label>
+				 	 		<input type="text" name="user" id="user" value="" placeholder="请填入邮箱或手机号码" onblur="dl1()"/>
+				 	 		<div id="input_tb1">
+				 	 			
+				 	 		</div>
+				 	 		<div id="yz_user">
+				 	 			<div class="yuan_red">!
+				 	 			</div>账户格式不正确！
+				 	 		</div>
+				 	 	</li>
+				 	 	<li>
+				 	 		<label >密码：</label>
+				 	 		<input type="password" name="" id="pwd" value="" placeholder="请填入密码"  onblur="dl2()" />
+				 	 		<div id="input_tb2">
+				 	 		</div>
+				 	 		<div id="yz_pwd">
+				 	 			<div class="yuan_red">!</div>密码长度为6-20位字符
+				 	 		</div>
+				 	 	</li>
+				 	 	<li>
+				 	 		<label>验证码：</label>
+				 	 		<input style="width: 125px" type="text" id="yzm" value="" onblur="dl3()" />
+				      	     <b id="yztupian"></b>
+				      	     <span>看不清？</span>
+				      	     <a id="changetp" style="line-height: 35px;" href="javascript:void(0);">换一张</a>
+				      	     <div id="yz_yzm">
+				      	     	<div class="yuan_red">!
+				 	 			</div>图片验证码格式错误
+				      	     </div>
+				 	 	</li>
+				 	 	<li class="mar1">
+				 	 		<input type="checkbox" name="" id="check_1" value="" class="" />
+				 	 		<p>记住我（30天内免登陆）<a href="">忘记密码？</a></p>
+				 	 	</li>
+				 	 	<li>
+				 	 		<button type="submit" id="btn1">
+				 	 		</button>
+				 	 	</li>
+				 	 </form>
+				    <div id="hz_1">使用合作网站账号登录母婴之家：</div>
+					<ul id="hezuo">
+						<a href="" id="xinlang"></a>
+						<a href="" id="zhifubao"></a>
+						<a href="" id="tengxun"></a>
+					</ul>
+					
+					
+				 </ul>
+			</div>
+		</div>
+<footer id="foot">
+			
+			<div id="foot3">
+				<div id="foot3box">
+					<ul>
+						<li><a href="index.html">首页</a></li><s></s>
+						<li><a href="javascript:void(0);">公司简介</a></li><s></s>
+						<li><a href="javascript:void(0);">人才招聘</a></li><s></s>
+						<li><a href="javascript:void(0);">合作联系</a></li><s></s>
+						<li><a href="javascript:void(0);">企业理念</a></li>
+					</ul>
+					<span>由本网站发布的商品或服务的商业宣传活动均属“广告”</span><br />
+					<span>Copyright©2003 - 2016 上海母婴之家网络科技股份有限公司 muyingzhijia.com All Rights Reserved 客服热线：021-51760000 400820100</span><br />
+					<div></div>
+					<span>沪ICP备09021709号</span>
+					<i></i>
+					<span>沪公网安备 31010402000751号</span>
+				</div>
+			</div>
+		</footer>
+	</body>
+	<script type="text/javascript">
+		var arr=['1','2','3','4','5','6','7','8','9','0','A','B','C','D','E','F'];
+		var User=document.getElementById("user")
+		var Pwd=document.getElementById("pwd");
+		var Yzm=document.getElementById("yzm");
+		var yz4=document.getElementById("yz_tp")
+		var Input_tb1=document.getElementById("yz_user")
+		var Input_tb2=document.getElementById("yz_pwd")
+		var Input_tb3=document.getElementById("yz_yzm")
+		var a=Math.round(Math.random()*15);
+		var b=Math.round(Math.random()*15);
+		var c=Math.round(Math.random()*15);
+		var a1=Math.round(Math.random()*9);
+		var a2=Math.round(Math.random()*9);
+		var a3=Math.round(Math.random()*9);
+		var a4=Math.round(Math.random()*9);
+		var YzP=document.getElementById("yztupian");
+		var change=document.getElementById("changetp");
+		var shouji=document.getElementById("shouji_1");
+		var b1,b2,b3,b4;
+		var gou1=document.getElementById("yuan_gou1");
+		var gou2=document.getElementById("yuan_gou2");
+		var gou3=document.getElementById("yuan_gou3");
+		var gou4=document.getElementById("yuan_gou4");
+		YzP.style.background="#"+arr[a]+arr[b]+arr[c];
+		YzP.innerHTML=arr[a1]+arr[a2]+arr[a3]+arr[a4];
+		YzP.style.color="#"+arr[c]+arr[a]+arr[b];
+		
+	</script>
+</html>

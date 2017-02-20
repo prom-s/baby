@@ -1,0 +1,61 @@
+$(function(){
+//	------------header---------------
+	$(".phone").hover(function(){
+		$(this).find("a").find("u").animate({"background-position-y":"-265px"},100);
+		$(this).find(".phonem").css("display","block");
+	},function(){
+		$(this).find("a").find("u").animate({"background-position-y":"-240px"},100);
+			$(this).find(".phonem").css("display","none");
+	})
+	$(".mydd").hover(function(){
+		$(this).find("a").css("")
+	},function(){})
+//	*******section********
+	$(".nav_left1").hover(function(){
+		$(".nav_left1m").find(".nav_left1m1").css("display","block");
+			$(".nav_left1m1>li").mouseover(function(){
+				$(".nav_left1m1").css("box-shadow","none");
+				$index = $(this).index();
+				$(this).find("a").css({"width":"125px","border":"1px solid #ff5c00","border-right":"none"});
+				$(this).siblings().find("a").css({"width":"123px","border":"1px solid transparent","border-right":"none"});
+				$(".nav_left1m2>li").eq($index).css("display","block").siblings().css("display","none");
+			})
+	},function(){
+		$(".nav_left1m").find(".nav_left1m1").css("display","none");
+		$(".nav_left1m2>li").css("display","none");
+		$(".nav_left1m1>li").find("a").css({"width":"123px","border":"1px solid transparent","border-right":"none"});
+	})
+	$("#sec_left2>ul>li").mouseover(function(){
+		$(this).css("height","92px").find(".sec_left2mz").css("display","none").prev().css("display","block");
+		$(this).siblings().css("height","30px").find(".sec_left2mm").css("display","none").next().css("display","block");
+	})
+	$bol = true;
+		$(".sec_right1m1b").click(function(){
+			if($bol){
+				$(".sec_right1m1").css("height","197px");
+				$(".sec_right1m1b").css("background-position","0px -25px");
+				$("#sec_right1").css("height","505px");
+				$bol = false;
+			}else{
+				$(".sec_right1m1").css("height","48px");
+				$(".sec_right1m1b").css("background-position","0px 0px");
+				$("#sec_right1").css("height","365px");
+				$bol = true;
+			}
+		})
+		$(".sec_right1m2b").click(function(){
+			if($bol){
+				$(".sec_right1m2").css("height","65px");
+				$(".sec_right1m2b").css("background-position","0px -25px");
+				$("#sec_right1").css("height","375px");
+				$bol = false;
+			}else{
+				$(".sec_right1m2").css("height","55px");
+				$(".sec_right1m2b").css("background-position","0px 0px");
+				$("#sec_right1").css("height","365px");
+				$bol = true;
+			}
+		})
+	
+	
+})

@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/my2.css"/>
+		<script src="js/jquery-1.11.3.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/2.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		
+		<header id="head">
+			<div id="headBox">
+				<div id="Boxrt" class="rt">
+					<ul>
+						<li><span>wbz</span>,欢迎来到母婴之家！</li>
+						<li><!-- <a class="red" href="javascript:void(0);">[登录]</a> --> <a   href="javascript:void(0);">[退出]</a></li><s></s>
+						<li id="dingdan" class="list2"><a href="javascript:void(0);">我的订单<b></b></a>
+							<div id="dd">
+								<ul>
+									<li><a href="javascript:void(0);">我的家</a></li>
+									<li><a href="javascript:void(0);">我的提问</a></li>
+									<li><a href="javascript:void(0);">我的评论</a></li>
+									<li><a href="javascript:void(0);">我的收藏</a></li>
+									<li><a href="javascript:void(0);">我的幸运星</a></li>
+								</ul>
+							</div>
+						</li><s></s>
+						<li id="fw" class="list2"><a href="javascript:void(0);">客户服务<b></b></a>
+							<div id="fuwu">
+								<ul>
+									<li><a href="javascript:void(0);">在线服务</a></li>
+									<li><a href="javascript:void(0);">帮助中心</a></li>
+								</ul>
+							</div>
+						</li><s></s>
+						<li><a href="javascript:void(0);">商务合作</a></li><s></s>
+						<li><a href="javascript:void(0);">分类导航</a></li>
+					</ul>
+				</div>
+				<div id="Boxlf" class="lf">
+					<ul>
+						<li ><a class="red" href="javascript:void(0);">母婴之家</a></li>
+						<li><a href="javascript:void(0);">母婴海淘</a></li>
+						<li class="sjb"><a href="javascript:void(0);" class="aa"><b></b>手机版</a>
+							<div id="sj">
+								
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</header>
+		<nav id="nav">
+			
+		</nav>
+		<aside id="aside">
+			
+		</aside>
+		
+		<section id="section">
+			<div id="logo-step">
+				<a href="javascript:void(0);"><img src="img/img1/1.png"/></a>
+				<div id="step">
+					
+				</div>
+			</div>
+			
+			<div class="checkout">
+				<div class="checkout_1">
+					<div class="step_title">
+						<h2>收货信息</h2>
+					</div>
+					<div class="step_content">
+						<div class="sbox">
+							<div class="write-info">
+								<div class="list"  >
+                                        <span class="label" ><em>*</em>收货人：</span>
+                                        <div class="field">
+                                            <input type="text" class="textbox"   maxlength="10" onblur="bcchange1()" id="bcchange1">
+                                        </div>
+                                        <span class="status error" id="name_div_error" style="display: none;">请您填写收货人姓名</span>
+								</div>
+								
+								 <div class="list select-address" >
+                                        <span class="label"><em>*</em>所在地区：</span>
+                                        <div class="field">
+                                                    <select id="consignee_province" >
+                                                        <option value="0"id="bcchange2">请选择：</option>
+                                                            <option value="1000001">北京市</option>
+                                                            <option value="1000009">上海市</option>
+                                                            <option value="1000010">江苏省</option>
+                                                            <option value="1000019">广东省</option>
+                                                            <option value="1000011">浙江省</option>
+                                                            <option value="1000014">江西省</option>
+                                                            <option value="1000018">湖南省</option>
+                                                            <option value="1000015">山东省</option>
+                                                            <option value="1000012">安徽省</option>
+                                                            <option value="1000013">福建省</option>
+                                                            <option value="1000022">重庆市</option>
+                                                            <option value="1000002">天津市</option>
+                                                            <option value="1000017">湖北省</option>
+                                                            <option value="1000006">辽宁省</option>
+                                                            <option value="1000023">四川省</option>
+                                                            <option value="1000027">陕西省</option>
+                                                            <option value="1000003">河北省</option>
+                                                            <option value="1000016">河南省</option>
+                                                            <option value="1000025">云南省</option>
+                                                            <option value="1000008">黑龙江省</option>
+                                                            <option value="1000004">山西省</option>
+                                                            <option value="1000005">内蒙古自治区</option>
+                                                            <option value="1000007">吉林省</option>
+                                                            <option value="1000020">广西壮族自治区</option>
+                                                            <option value="1000034">海南省</option>
+                                                            <option value="1000024">贵州省</option>
+                                                            <option value="1000026">西藏自治区</option>
+                                                            <option value="1000028">甘肃省</option>
+                                                            <option value="1000029">青海省</option>
+                                                            <option value="1000030">宁夏回族自治区</option>
+                                                            <option value="1000031">新疆维吾尔自治区</option>
+                                                    </select>
+                                               
+                                                <span >
+                                                    <select  id="consignee_city">
+                                                        <option value="0" >请选择：</option>
+                                                        <option value="1" id="beijing" style="display: none;">北京</option>
+                                                        <option value="2" id="shanghai" style="display: none;">上海</option>
+                                                    </select>
+                                                </span>
+                                                <span >
+                                                    <select  id="consignee_countryid">
+                                                        <option value="0" >请选择：</option>
+                                                        <option value="1" id="dongchengqu" style="display: none;">东城区</option>
+                                                        <option value="2" id="chaoyangqu" style="display: none;">朝阳区</option>
+                                                        <option value="3" id="huangbuqu" style="display: none;">黄埔区</option>
+                                                        <option value="4" id="jiadingqu" style="display: none;">嘉定区</option>
+                                                    </select>
+                                                </span>
+
+                                            </span>
+                                        </div>
+                                        <span class="form-tip">
+                                            <span class="status error" id="area_div_error" style="display: none;">请您填写完整的地区信息</span>
+                                            
+                                               
+                                        </span>
+                                    </div>
+                                  
+                                  
+                                 <div class="list full-address" >
+                                        <span class="label"><em>*</em>详细地址：</span>
+                                        <div class="field">
+                                            
+                                            <input type="text" class="textbox" id="bcchange3" onblur="bcchange3()" >
+                                        </div>
+                                        <span class="status error" id="address_div_error" style="display: none;">请您填写收货人详细地址</span>
+                                    </div>
+							
+								<div class="list" >
+                                        <span class="label"><em>*</em>手机号码：</span>
+                                        <div class="field">
+                                            <input type="text" class="textbox"   maxlength="11"id="bcchange4" onblur="bcchange4()">
+                                        </div>
+                                        <span class="status error" id="call_div_error" style="display: none;">请您填写收货人手机号码</span>
+                                    </div>
+							
+								<div class="list" id="bcchange5">
+                                        <span class="label">固定电话：</span>
+                                        <div class="field">
+                                            <input type="text" class="textbox" id="consignee_phone_left"  maxlength="3" value="区号" onclick="change()" >
+                                            <s>--</s>
+                                            <input type="text" class="textbox" id="consignee_phone_middle" maxlength="8" value="电话号码" onclick="change()" >
+                                            <s>--</s>
+                                            <input type="text" class="textbox" id="consignee_phone_right"  maxlength="4" value="分机号" onclick="change()" >
+                                        </div>
+                                    </div>
+							
+								<div class="form-btn " >
+                                    <a href="#none" class="btn-submit" style="display: block" onclick="confirm()"><span >保存收货人信息</span></a>
+                                    <a href="#none" class="btn-cancel " ><span>取消</span></a>
+                                    
+                                </div>
+							</div>
+							
+						</div>
+					</div>
+				
+				</div>
+				
+				<div  class="checkout_2">
+					<div class="step_title">
+						<h2>支付方式</h2>
+					</div>
+					<div class="step-content-type1"  style="display: block">
+						请先 “确认收货信息”
+					</div>
+				</div>
+				
+				<div  class="checkout_3">
+					<div class="step_title">
+						<h2 >发票信息</h2>
+					</div>
+					<div class="step-content-type1"  style="display: block">
+							请先 “确认收货信息”
+					</div>
+				</div>
+						
+				<div class="checkout_4">
+				<div class="step_title">
+					<h2 class="fl">送货清单</h2>
+					<a class="fr" href="index.html" target="_self">返回购物车修改</a>
+				</div>
+				<div class="part-order-dt">
+					<div class="fl">
+						<span class="order-type-shang">商城</span> &nbsp;&nbsp;订单
+						<span class="order-num">1</span>
+						<em>母婴之家发货</em>
+					</div>
+					<div class="fl" style="position: relative;">
+						<span class="order-fore">请先 “确认收货信息”</span> 
+					</div>
+				
+					<div class="clear"></div>
+				</div>
+				
+				<div class="order-review-thead">
+					<span class="fore-name">商品信息</span>
+					<span class="fore-price">单价（元）</span>
+					<span class="fore-num">数量（件）</span>
+					<span class="fore-cal">小计（元）</span>
+					<div class="clear"></div>
+                </div>
+                
+                <div class="order-review-tbody">
+				<ul class="order-review-list">
+					<li  class="" >
+						<a class="pic inblock" href="http://item.muyingzhijia.com/33158.html" target="_blank" title="方广营养钙铁锌猪肉酥100g">
+							<img src="http://img.boodoll.cn/product/small//33158_01_01.jpg" title="方广营养钙铁锌猪肉酥100g" alt="方广营养钙铁锌猪肉酥100g">
+						</a>
+						<span class="tit inblock">
+						<a href="http://item.muyingzhijia.com/33158.html" target="_blank" title="方广营养钙铁锌猪肉酥100g">方广营养钙铁锌猪肉酥100g</a>
+						</span>
+						<span class="price inblock"><ins>¥39.50 </ins></span>
+						<span class="num inblock"><ins>1</ins></span>
+						<span class="count inblock"><strong>¥39.50  </strong></span>
+						<div class="clear"></div>
+					</li>
+				</ul>
+				<div class="clear"></div>
+				</div>
+
+				<div class="order-review-tfoot">
+				<div class="fl">
+					<div class="order-review-tfoot-fl">
+						<div class="order-review-tfoot-fl-dt">
+							<a href="#none" onclick="xianshi()">若您对包裹有特殊要求，请在此留言</a>
+				
+						</div>
+						<div class="order-review-tfoot-fl-dd" style="display: none;" id="order-review-tfoot-fl-dd">
+							<p class="fl">订单备注：</p>
+							<div class="fl remark-con"></div>
+							<div class="fl remark">
+								<textarea name="Message_1" id="Message_1" maxlength="30"> </textarea>
+								
+							</div>
+							<div class="clear"></div>
+						</div>
+						<div class="clear"></div>
+					</div>
+				
+				</div>
+				<div class="order-review-tfoot-fr">
+					<div class="order-review-tfoot-list">
+						<span class="pro-totle">商品金额：</span>
+						<strong>¥39.50</strong>
+					</div>
+					<div class="order-review-tfoot-list">
+						<span class="pro-pay-cheap">抵扣金额：</span>
+						<strong id="SubDiscountPrice_1">¥0.00</strong>
+					</div>
+					<div class="order-review-tfoot-list">
+						<span class="pro-pay-deliver">运费：</span>
+						<strong>¥0.00</strong>
+					</div>
+					<div class="order-review-tfoot-list">
+						<span class="pro-pay-totle">应付金额：</span>
+						<strong style="color: #E60012; font-weight: bold;" id="SubTotalPrice_1">¥39.50 </strong>
+					</div>
+				
+					<div class="clear"></div>
+				</div>
+				<div class="clear"></div>
+				</div>
+
+
+
+				</div>
+				
+				<div class="checkout_5">
+					
+				<div class="step_title">
+					<h2>订单结算</h2>
+				</div>
+				<div class="step_content">
+					<div class="order-summary">
+						<div class="f1" style="border-right: 1px dotted #ccc;padding-bottom: 10px;">
+							<div class="order-coupon">
+							<div class="item">
+								<div class="toggle-title">
+								<a id="toggle" class="toggler" href="javascript:;" onclick="xianshi2()">
+                                    <b id="bpositon"></b><em id="giftCardTitle" >使用礼品卡</em>
+                                </a>
+								</div>
+                                
+                                
+                                <div class="toggle-giftCard-wrap"  style="display: none;width: 610px;"id="toggle-giftCard-wrap2">
+                                <div class="giftCardbox" >
+                                    <div class="fl" style="margin-right:50px;">
+                                        <p>您当前可用的礼品卡金额为：<em class="black">￥0.00</em></p>
+                                        <p>本次可支付的礼品卡金额为：<em  class="red">￥0.00 </em></p>
+                                        
+                                    </div>
+                                    <div class="fl">
+                                        <div  class="stickTips" style="margin-top: 10px;"></div>
+                                        <div style=" height:105px; *height:70px">
+                                            <div class="fl" style="margin-right: 8px; position:relative">
+                                                <div style="line-height:18px;">
+                                                    重新获取验证码倒计时
+                                                    <p style="line-height:18px; font-size:14px;"><em class="red" id="countDown">60</em>秒</p>
+                                                </div>
+                                              
+                                                <input type="text" id="input-GiftCard-code" name="code" class="codetxt" maxlength="6" autocomplete="off">
+                                                <p class="errorTips" id="errorTips" style="position: absolute;  width: 230px;  line-height: 16px;  height: 34px;  margin-top: 5px;"></p>
+                                            </div>
+                                            <div class="fl">
+                                                <a href="javascript:;" target="_self" class="get-GiftCard-code disabled" id="get-GiftCard-code">获取验证码</a>
+                                                <a href="javascript:;" target="_self" class="get-GiftCard-code disabled" id="useBtn">使用</a>
+                                            </div>
+                                            <div class="clear"></div>
+                                        </div>
+                                    </div>
+                                    <div class="clear"></div>
+                                    <p style="line-height: 21px">友情提示：</p>
+                                    <p style="line-height: 21px">礼品卡金额仅支持商城商品的支付，不支持海淘、品牌专场商品。<a href="http://www.muyingzhijia.com/GiftCardGuide.aspx" target="_blank" style="color: #36f;">查看礼品卡详细说明</a></p>
+                                    <p style="line-height: 21px">礼品卡金额支付部分不提供发票</p>
+                                </div>
+                                
+                                <div class="clear"></div>
+                            </div>
+                                
+                                
+                                
+                                
+                                
+                                
+                            </div>
+							</div>
+						</div>
+					
+						<div class="statistic">
+                    <div class="statistic-list">
+                        <div class="list">
+                            <span>
+                                <em id="span-skuNum">
+                                    1
+                                </em>
+                                件商品，总商品金额：
+                            </span>
+                            <em class="price" id="warePriceId">¥39.50
+                            </em>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="list">
+                            <span>
+                                <em id="span-deliverNum">1</em>
+                                笔订单，总运费：
+                            </span>
+                            <em class="price" id="deliverPriceId">¥0.00
+                            </em>
+                            <div class="clear"></div>
+                        </div>
+
+                        <div class="list">
+                            <span>抵扣总额：</span>
+                            <em class="price" id="cachBackId" price="0">¥0.00</em>
+                            <div class="clear"></div>
+                        </div>
+
+                    </div>
+                    <div class="list">
+                        <span>应付总额：</span>
+                        <em class="price">
+                            <strong id="sumPayPriceId" price="39.5">¥39.50
+                            </strong>
+                        </em>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="submit-check">
+                        <div style="text-align: center; display: none" id="SubOrderLoading">
+                            <span class="loading-2">正在努力提交订单……</span>
+                        </div>
+                    </div>
+                    <button type="submit" class="checkout-submit-disabled"  id="order-submit"></button>
+                    <div class="submit-check-info" id="submit_check_info_message" style="">
+                        <i class="arrconf"></i>
+                        <span id="submitOrderMsg">请选择收货地址</span>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+               
+               			<div class="clear"></div>
+					
+					</div>
+					<div class="clear"></div>
+				</div>
+				
+				</div>
+				
+				
+			</div>
+		</section>
+		
+		
+		
+		
+		
+		
+		
+		
+		<footer id="foot" >
+			<!-- <div id="foot1">
+				<div id="footbox">
+					<ul>
+						<li>
+							<dl>
+								<dt><a href="javascript:void(0);"><i class="i1"></i><h2>品质</h2></a></dt>
+								<dd>全球化采购、正品保障</dd>
+							</dl>
+						</li>
+						<li>
+							<dl>
+								<dt><a href="javascript:void(0);"><i class="i2"></i><h2>便捷</h2></a></dt>
+								<dd>一站式服务、送货上门</dd>
+							</dl>
+						</li>
+						<li>
+							<dl>
+								<dt><a href="javascript:void(0);"><i class="i3"></i><h2>专业</h2></a></dt>
+								<dd>顾问式客服、全年无休</dd>
+							</dl>
+						</li>
+						<li>
+							<dl>
+								<dt><a href="javascript:void(0);"><i class="i4"></i><h2>贴心</h2></a></dt>
+								<dd>个性化导购、售后无忧</dd>
+							</dl>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div id="foot2">
+				<div id="foot2box">
+					<ul id="boxul">
+						<li>
+							<i class="li1"></i>
+							<ul>
+								<p>购物指南</p>
+								<li><a href="javascript:void(0);">购物流程</a></li>
+								<li><a href="javascript:void(0);">常见问题</a></li>
+								<li><a href="javascript:void(0);">优惠码(券)</a></li>
+							</ul>
+						</li>
+						<li>
+							<i class="li2"></i>
+							<ul>
+								<p>支付方式</p>
+								<li><a href="javascript:void(0);">货到付款</a></li>
+								<li><a href="javascript:void(0);">在线支付</a></li>
+							
+							</ul>
+						</li>
+						<li>
+							<i class="li3"></i>
+							<ul>
+								<p>配送方式</p>
+								<li><a href="javascript:void(0);">运费及时效</a></li>
+								<li><a href="javascript:void(0);">品牌专场配送方式</a></li>
+							</ul>
+						</li>
+						<li>
+							<i class="li4"></i>
+							<ul>
+								<p>售后服务</p>
+								<li><a href="javascript:void(0);">退换货原则</a></li>
+								<li><a href="javascript:void(0);">退换货流程</a></li>
+								<li><a href="javascript:void(0);">退换货周期</a></li>
+								<li><a href="javascript:void(0);">品牌专场售后政策</a></li>
+							</ul>
+						</li>
+						<li>
+							<i class="li5"></i>
+							<ul>
+								<p>关于我们</p>
+								<li><a href="javascript:void(0);">企业理念</a></li>
+								<li><a href="javascript:void(0);">网站合作</a></li>
+								<li><a href="javascript:void(0);">人才招聘</a></li>
+								<li><a href="javascript:void(0);">关于我们</a></li>
+							</ul>
+						</li>
+						<li>
+							<i class="li6"></i>
+							<ul>
+								<p>联系我们</p>
+								<li><a href="javascript:void(0);">新浪微博</a></li>
+								<li><a href="javascript:void(0);">联系客服</a></li>
+								<li><a href="javascript:void(0);">新浪微博</a></li>
+							</ul>
+						</li>
+						<li class="last">
+							<div></div>
+							<b></b>
+							<p>扫一扫加微信</p>
+						</li>
+					</ul>
+				</div>
+			</div> -->
+			<div id="foot3" style="background: #FFFFFF;">
+				<div id="foot3box">
+					
+					<span>由本网站发布的商品或服务的商业宣传活动均属“广告”</span><br />
+					<span>Copyright©2003 - 2016 上海母婴之家网络科技股份有限公司 muyingzhijia.com All Rights Reserved 客服热线：021-51760000 400820100</span><br />
+					<div></div>
+					<span>沪ICP备09021709号</span>
+					<i></i>
+					<span>沪公网安备 31010402000751号</span>
+				</div>
+			</div>
+		</footer>
+	</body>
+</html>

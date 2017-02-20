@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/my.css"/>
+		<link rel="stylesheet" type="text/css" href="css/register.css"/>
+	   <script src="js/jquery-1.11.3.js" type="text/javascript" charset="utf-8"></script>
+	   <script src="js/demo.js" type="text/javascript" charset="utf-8"></script>
+	   <script src="js/register.js" type="text/javascript" charset="utf-8"></script>
+	
+	</head>
+
+	<body>
+		
+		<header id="head">
+
+			<div id="headBox">
+				<div id="Boxrt" class="rt">
+					<ul>
+						<li>欢迎来到母婴之家！</li>
+						<li><a class="red" href="javascript:void(0);">[登录]</a> <a  class="red" href="javascript:void(0);">[免费注册]</a></li><s></s>
+						<li id="dingdan" class="list"><a href="javascript:void(0);">我的订单<b></b></a>
+							<div id="dd">
+								<ul>
+									<li><a href="javascript:void(0);">我的家</a></li>
+									<li><a href="javascript:void(0);">我的提问</a></li>
+									<li><a href="javascript:void(0);">我的评论</a></li>
+									<li><a href="javascript:void(0);">我的收藏</a></li>
+									<li><a href="javascript:void(0);">我的幸运星</a></li>
+								</ul>
+							</div>
+						</li><s></s>
+						<li id="fw" class="list"><a href="javascript:void(0);">客户服务<b></b></a>
+							<div id="fuwu">
+								<ul>
+									<li><a href="javascript:void(0);">在线服务</a></li>
+									<li><a href="javascript:void(0);">帮助中心</a></li>
+								</ul>
+							</div>
+						</li><s></s>
+						<li><a href="javascript:void(0);">商务合作</a></li><s></s>
+						<li><a href="javascript:void(0);">分类导航</a></li>
+					</ul>
+				</div>
+				<div id="Boxlf" class="lf">
+					<ul>
+						<li style="border-left:1px solid #ccc;border-top:1px solid #ccc;background: #fff;"><a class="red" href="javascript:void(0);">母婴之家</a></li>
+						<li><a href="javascript:void(0);">母婴海淘</a></li>
+						<li class="sjb"><a href="javascript:void(0);"><b></b>手机版</a>
+							<div id="sj">					
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</header>
+		<div id="main">	
+			<img src="img/myzj.png"/>
+		</div>
+		<div id="main_mid">
+			<ul id="zcdl">
+				<li class="zc"><a href="javascript:void(0);"><p></p>注册</a></li>
+				<li class="dl"><a href="login.html"><p></p>登录</a></li>
+			</ul>
+			<div id="zc_main">
+				<ul id="zc_main_left">
+					<form action="login.html" method="get" onsubmit="return func()">
+					  <li style="margin-top: 40px;">
+					  	 <div>手机号：</div>
+					  	 <input type="text" name="user" id="user" value="" placeholder="请填入手机号" onblur="func1()" />
+					  </li>
+				      <li>
+				      	  <div>请设置密码：</div><input type="password" name="" id="pwd1" value="" placeholder="请填入密码" onblur="func2()"/>
+				      </li>
+				      <li>
+				      	   <div>请输入密码：</div><input type="password" name="pwd2" id="pwd2" value="" placeholder="请再次填写密码" onblur="func3()"/>
+				      </li>
+				      <li>
+				      	  <div>验证码：</div>
+				      	  <input style="width: 125px" type="text" id="yzm" value="" onblur="func4()"/>
+				      	  <b id="yztupian"></b><span>看不清？</span><a id="changetp" style="line-height: 35px;" href="">换一张</a>
+				      </li>
+				      <li>
+				      	   <div>短信验证码：</div>
+				      	   <input style="width: 125px;" type="text" name="" id="sjyzm" value="" onblur=""/><a id="shouji_1" href="javascript:void(0);"><p></p></a>
+				      </li>
+				      <li style="color: #666666;">
+				      	   <input id="cc1" class="check_1" style="width: 12px;height: 12px;" type="checkbox"  name="" value="" onclick="func6()" onblur="func7()"/><span style="float: left;line-height: 20px;">阅读并同意</span><a  href="javascript:void(0)">"母婴之家网站用户协议"</a></li>
+				      	   <div id="yz_tongyi"><div class="yuan_red">!</div>您还没有同意用户协议</div>
+				      <li style="margin-top: 0;">
+				      	    <button type="submit" id="btn"></button>
+				      </li>
+					</form>
+					<div id="hz">使用合作网站账号登录母婴之家：</div>
+					<ul id="hezuo">
+						<a href="" id="xinlang"></a>
+						<a href="" id="zhifubao"></a>
+						<a href="" id="tengxun"></a>
+					</ul>
+					<div id="input_tb1">
+					</div>
+					<div id="input_tb2">
+					</div>
+					<div id="input_tb3">
+					</div>
+				</ul>
+				<div id="zc_main_right">
+					 <div>
+					 	
+					 </div>
+				</div>
+			</div>
+		</div>
+		<!--
+        	作者：645647115@qq.com
+        	时间：2016-12-14
+        	描述：错误提示
+       -->
+        <div id="yzcw">
+        	<div id="yz_sj"><div class="yuan_red">!</div>手机格式不对，请重新输入！</div>
+        	<div id="yz_pwd1"><div class="yuan_red">!</div>密码长度限制为6-20位字符</div>
+        	<div id="yz_pwd2"><div class="yuan_red">!</div>2次密码不一致，请重新输入</div>
+        	<div id="yz_tp"><div class="yuan_red">!</div>图片验证码格式错误</div>
+        	<div id="yz_mes"><div class="yuan_red">!</div>短信验证码格式错误</div>
+        	
+        	<div id="yuan_gou" class="yuan_gou">
+        	</div>
+        	<div id="yuan_gou1" class="yuan_gou"></div>
+        	<div id="yuan_gou2" class="yuan_gou"></div>
+        	<div id="yuan_gou3" class="yuan_gou"></div>
+        	<div id="yuan_gou4" class="yuan_gou"></div>
+        	<!--<div id="yuan_gou5" class="yuan_gou"></div>-->
+        	
+        </div>
+		<footer id="foot">		
+			<div id="foot3">
+				<div id="foot3box">
+					<ul>
+						<li><a href="javascript:void(0);">首页</a></li><s></s>
+						<li><a href="javascript:void(0);">公司简介</a></li><s></s>
+						<li><a href="javascript:void(0);">人才招聘</a></li><s></s>
+						<li><a href="javascript:void(0);">合作联系</a></li><s></s>
+						<li><a href="javascript:void(0);">企业理念</a></li>
+					</ul>
+					<span>由本网站发布的商品或服务的商业宣传活动均属“广告”</span><br />
+					<span>Copyright©2003 - 2016 上海母婴之家网络科技股份有限公司 muyingzhijia.com All Rights Reserved 客服热线：021-51760000 400820100</span><br />
+					<div></div>
+					<span>沪ICP备09021709号</span>
+					<i></i>
+					<span>沪公网安备 31010402000751号</span>
+				</div>
+			</div>
+		</footer>
+	</body>
+	<script type="text/javascript">
+		var inp1=document.getElementById("user");
+		var inp2=document.getElementById("pwd1");
+		var inp3=document.getElementById("pwd2");
+		var inp4=document.getElementById("yzm");
+		var inp5=document.getElementById("sjyzm");
+		var yz1=document.getElementById("yz_sj");
+		var yz2=document.getElementById("yz_pwd1");
+		var yz3=document.getElementById("yz_pwd2");
+		var yz4=document.getElementById("yz_tp")
+		var yz5=document.getElementById("yz_mes");
+		var check1=document.getElementById("cc1");
+		var yuangou=document.getElementById("yuan_gou");
+		var yzty=document.getElementById("yz_tongyi");
+		var arr=['1','2','3','4','5','6','7','8','9','0','A','B','C','D','E','F'];
+		var a=Math.round(Math.random()*15);
+		var b=Math.round(Math.random()*15);
+		var c=Math.round(Math.random()*15);
+		var a1=Math.round(Math.random()*9);
+		var a2=Math.round(Math.random()*9);
+		var a3=Math.round(Math.random()*9);
+		var a4=Math.round(Math.random()*9);
+		
+		var star=document.getElementById("yztupian");
+		var change=document.getElementById("changetp");
+		var shouji=document.getElementById("shouji_1");
+		var b1,b2,b3,b4;
+		var gou1=document.getElementById("yuan_gou1");
+		var gou2=document.getElementById("yuan_gou2");
+		var gou3=document.getElementById("yuan_gou3");
+		var gou4=document.getElementById("yuan_gou4");
+		star.style.background="#"+arr[a]+arr[b]+arr[c];
+		star.innerHTML=arr[a1]+arr[a2]+arr[a3]+arr[a4];
+		star.style.color="#"+arr[c]+arr[a]+arr[b];
+		console.log(arr[a]+arr[b]+arr[c]);
+		console.log(star.innerText);
+		console.log(inp4.value);
+
+	</script>
+</html>
